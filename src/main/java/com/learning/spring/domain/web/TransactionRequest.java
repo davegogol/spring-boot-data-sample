@@ -1,13 +1,8 @@
-package com.learning.spring.model;
+package com.learning.spring.domain.web;
 
-import com.fasterxml.jackson.annotation.JsonView;
-
-public class Transaction {
-    @JsonView
+public class TransactionRequest {
     private double amount;
-    @JsonView
     private String type;
-    @JsonView
     private long parentId;
 
     public double getAmount() {
