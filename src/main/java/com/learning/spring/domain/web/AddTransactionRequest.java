@@ -1,6 +1,6 @@
 package com.learning.spring.domain.web;
 
-public class TransactionRequest {
+public class AddTransactionRequest {
     private double amount;
     private String type;
     private long parentId;

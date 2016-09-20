@@ -5,7 +5,7 @@ import javax.persistence.Id;
 
 
 @Entity
-public class TransactionEntity {
+public class Transaction {
 
     @Id
     private Long id;
