@@ -1,26 +1,26 @@
-# spring-boot-data-sample [in-progress]
-Spring boot example which integrates Spring data in-memory database.
+#Rest service sample 
+Rest service sample which provides some banking sample endpoints. 
 
 #Endpoints:
 
-* PUT /transactionservice/transaction/{id} - Stores a new transaction details;
+* <code>PUT</code> /transactionservice/transaction/{id} - Stores a new transaction details;
 ```bash
 Body:
 { "amount":double,"type":string,"parent_id":long }
 ```
-* GET /transactionservice/transaction/{id} - Returns transaction details;
+* <code>GET</code> /transactionservice/transaction/{id} - Returns transaction details;
 ```bash
 Returns:
 { "amount":double,"type":string,"parent_id":long }
 ```
 
-* GET /transactionservice/types/{types} - Returns transactions IDs that belong to the same type;
+* <code>GET</code> /transactionservice/types/{types} - Returns transactions IDs that belong to the same type;
 ```bash
 * Returns:
 [ long, long, .... ]
 ```
 
-* GET /transactionservice/sum/{transaction_id} - Returns a sum of all transactions that are linked by their parent id to transaction id;
+* <code>GET</code> /transactionservice/sum/{transaction_id} - Returns a sum of all transactions that are linked by their parent id to transaction id;
 ```bash
 Returns
 { "sum", double }
